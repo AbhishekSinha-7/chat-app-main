@@ -11,7 +11,7 @@ const uploadFile = async(file)=>{
     })
     const responseData = await response.json()
 
-
+t5y6gr
     return responseData
 }
 
