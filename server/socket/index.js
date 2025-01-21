@@ -32,6 +32,8 @@ io.on('connection',async(socket)=>{
     //current user details 
     const user = await getUserDetailsFromToken(token)
 
+    console.log('user',user)
+
     //create a room
     socket.join(user?._id.toString())
     onlineUser.add(user?._id?.toString())
